@@ -164,15 +164,6 @@ try:
                     f"{colors.red}[!] Please file with --file path/to/file or pass a single domain with --domain https://example.com{colors.reset}"
                 )
 
-        elif args.cheatsheet:
-            Cheat_sheet.main()
-        elif args.news:
-            if args.news == "latest" or args.news is None:
-                news.main(args.news)
-            else:
-                news.main(args.news)
-        elif args.cheatsheet:
-            Cheat_sheet.main()
         elif args.screenshot:
             if args.file:
                 if args.output:
@@ -316,19 +307,13 @@ try:
         while True:
             os.system("clear")
             banner.main()
-            list_attacks=["TOOLS","CHEATSHEET","NEWS","exit"]
+            list_attacks=["TOOLS","exit"]
             for i in range(len(list_attacks)):
                 print(colors.options,f"{i}) {list_attacks[i]}".title(),colors.reset)
             option = input(f"\n {colors.select}Select An Option ->{colors.reset}  ")
             if option=="0":
                 os.system("clear")
                 tool.main()
-            elif option=="1":
-                os.system("clear")
-                Cheat_sheet.main()
-            elif option=="2":
-                os.system("clear")
-                news.main()
             else:
                 exit_program()
     #to run file separately
