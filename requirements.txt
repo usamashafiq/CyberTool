@@ -1,0 +1,7 @@
+beautifulsoup4
+dnspython==2.3.0
+ipwhois
+requests
+selenium
+netifaces
+
