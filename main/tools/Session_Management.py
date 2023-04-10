@@ -1,5 +1,4 @@
 from main.tools import banner, colors, template,WEB_Application_Analysis
-from main import Cheat_sheet
 import os
 import requests
 from bs4 import BeautifulSoup
@@ -178,60 +177,7 @@ def main():
                 else:
                     break
 
-        elif option == "1":
-            os.system("clear")
-            banner.main()
-            Cheat_sheet.cheat(
-                {
-                    "Session Management - Authgear": "https://www.authgear.com/post/session-management",
-                    "OWASP Session Management Cheat Sheet": "https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html",
-                    "Session Management Overview - Secure Coding": "https://www.securecoding.com/blog/session-management-an-overview/",
-                    "Session Management Best Practices - Packetlabs": "https://www.packetlabs.net/posts/session-management/",
-                    "HTTP Sessions - MDN Web Docs": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Session",
-                    "Attacking Session Management with Burp Suite": "https://portswigger.net/support/using-burp-to-attack-session-management",
-                    "Session Management Lecture Notes - Stanford": "https://crypto.stanford.edu/cs155old/cs155-spring16/lectures/10-SessionMgmt.pdf",
-                    "Broken Authentication and Session Management - Crashtest Security": "https://crashtest-security.com/broken-authentication-and-session-management/",
-                    "Preventing Security Voids in Web Applications - SANS Institute": "https://sansorg.egnyte.com/dl/CmpHWTzrja",
-                    "PHP Session Security Management - PHP.net": "https://www.php.net/manual/en/features.session.security.management.php",
-                    "Session Management in ColdFusion - CFDocs": "https://cfdocs.org/security-session-management",
-                    "Comprehensive Guide on Broken Authentication and Session Management - Hacking Articles": "https://hackingarticles.in/comprehensive-guide-on-broken-authentication-session-management/",
-                    "What is Session Management? - Clerk.dev": "https://clerk.dev/blog/what-is-session-management",
-                    "All You Need to Know About User Session Security - SuperTokens": "https://supertokens.com/blog/all-you-need-to-know-about-user-session-security",
-                    "How to Secure Authentication, Session Management, and Access Control Systems of Your Web Applications - Vaadata": "https://www.vaadata.com/blog/how-to-secure-authentication-session-management-and-access-control-systems-of-your-web-applications/",
-                    "Understanding Session Management - Coveros": "https://www.coveros.com/understanding-session-management-one-of-owasp-top-10-part-1/",
-                    "Broken Authentication and Session Management Tips - Hacklido": "https://hacklido.com/blog/207-broken-authentication-and-session-management-tips",
-                    "Web Security Session Management Slide": "https://slideplayer.com/slide/5689194/#.XFSQwUKWre4.twitter",
-                    "Attacking Session Management - OWASP": "https://owasp.org/www-pdf-archive//Attacking_Session_Management_-_Alexandre_Villas.pdf",
-                    "Improving the Security of Session Management in Web Applications - OWASP": "https://owasp.org/www-pdf-archive//Improving_the_Security_of_Session_Management_in_Web_Applications_-_Philippe_De_Ryck.pdf",
-                    "Session Management - OWASP 2011": "https://owasp.org/www-pdf-archive//OWASP_2011_-_Slawomir_Rozbicki_-_Session_Managemnt.pdf",
-                    "Session Fixation - OWASP AppSec Research 2010": "https://owasp.org/www-pdf-archive//OWASP_AppSec_Research_2010_Session_Fixation_by_Schrank_Braun_Johns_and_Poehls.pdf",
-                    "SAP Session (Fixation) Attacks and Protections - OWASP": "https://owasp.org/www-pdf-archive//SAP-Session_(Fixation)_Attacks_and_Protections-OWASP-RaulSiles_Taddong.pdf",
-                    "Session Hijacking: Danger on the Network - OWASP": "https://owasp.org/www-pdf-archive//Sessi%C3%B3n_Hijacking_Peligro_en_la_Red.pdf",
-                    "Mastering Session Management - Siva Ram - PDF": "https://owasp.org/www-pdf-archive//Siva_Ram-Mastering_Session_Managment.pdf",
-                    "Application Session Management Best Practices": "https://auth0.com/blog/application-session-management-best-practices/",
-                },
-                "Session Management Write-UPS",
-            )
 
-        elif option == "2":
-            print("\n[+] Burp Extensions")
-            os.system("clear")
-            banner.main()
-            Cheat_sheet.cheat(
-                {
-                    "PortSwigger - Session Timeout Test": "https://portswigger.net/bappstore/c4bfd29882974712a1d69c6d8f05874e",
-                    "PortSwigger - CSRF Scanner": "https://portswigger.net/bappstore/60f172f27a9b49a1b538ed414f9f27c3",
-                    "PortSwigger - Token Extractor": "https://portswigger.net/bappstore/f24211fa6fcd4bbea6b21f99c5cad27a",
-                    "PortSwigger - Headers Analyzer": "https://portswigger.net/bappstore/8b4fe2571ec54983b6d6c21fbfe17cb2",
-                    "PortSwigger - J2EE Scan": "https://portswigger.net/bappstore/7ec6d429fed04cdcb6243d8ba7358880",
-                    "PortSwigger - CO2": "https://portswigger.net/bappstore/c5071c7a7e004f72ae485e8a72911afc",
-                    "PortSwigger - WS Security": "https://portswigger.net/bappstore/i5431k07za13636g0o9a1733ke7h10g3",
-                    "PortSwigger - JWT Editor": "https://portswigger.net/bappstore/26aaa5ded2f74beea19e2ed8345a93dd",
-                    "Github - WS-Attacker": "https://github.com/RUB-NDS/WS-Attacker",
-                    "Github - logger++": "https://github.com/PortSwigger/logger-plus-plus",
-                },
-                "Session Management Burp Extensions",
-            )
 
         else:
             return

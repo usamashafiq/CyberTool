@@ -1,5 +1,4 @@
 from main.tools import banner, colors, template
-from main import Cheat_sheet
 import os
 import requests
 from bs4 import BeautifulSoup
@@ -224,24 +223,6 @@ def main():
                 else:
                     break
 
-        elif option == "1":
-            print("\n[+] Write-UPS")
-            os.system("clear")
-            banner.main()
-            Cheat_sheet.cheat(
-                {
-                    "Configuration management in penetration testing": "https://www.jasonclause.com/configuration-management-cybersecurity/#:~:text=Configuration%20management%20is%20the%20process,software%20and%20the%20associated%20settings.",
-                    "How to find Exposed backup and unreferenced files": "https://securityboulevard.com/2021/08/exposed-backup-and-unreferenced-files-and-how-to-find-them/",
-                    "Review Old Backup and Unreferenced Files for Sensitive Information": "https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/04-Review_Old_Backup_and_Unreferenced_Files_for_Sensitive_Information",
-                    "Multiple Ways to Detect HTTP Options": "https://www.hackingarticles.in/multiple-ways-to-detect-http-options/",
-                    "security HTTP headers scanning and details": "https://www.atatus.com/tools/security-header",
-                    "Testing for Content Security Policy": "https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/12-Test_for_Content_Security_Policy",
-                    "Test Network Infrastructure Configuration": "https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/01-Test_Network_Infrastructure_Configuration",
-                    "Testing applications in production vs. non-production benefits": "https://www.techtarget.com/searchsecurity/tip/Testing-applications-in-production-vs-non-production-benefits",
-                    "How to Scan GitHub Repository for Credentials": "https://geekflare.com/github-credentials-scanner/",
-                },
-                "Configuration-Management Writeups",
-            )
 
         else:
             return
